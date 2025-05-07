@@ -6,4 +6,7 @@ git remote add upstream https://course-gitlab.tuni.fi/git-course/basics-material
 git fetch upstream
 
 # Yhdistä (merge) `upstream`-tietovaraston historia omaan tietovarastoosi
-git merge upstream/master
+git merge upstream/master --allow-unrelated-histories
+git config pull.rebase false
+git merge upstream/master --allow-unrelated-histories
+git checkout <commit-id> -- mergesort.py
