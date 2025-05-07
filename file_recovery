@@ -8,5 +8,4 @@ git fetch upstream
 # Yhdistä (merge) `upstream`-tietovaraston historia omaan tietovarastoosi
 git merge upstream/master --allow-unrelated-histories
 git config pull.rebase false
-git merge upstream/master --allow-unrelated-histories
-git checkout <commit-id> -- mergesort.py
+git push upstream mergesort.py
