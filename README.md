@@ -1,1 +1,9 @@
 
+# Lisää etä-Git-tietovarasto nimellä `upstream`
+git remote add upstream https://course-gitlab.tuni.fi/git-course/basics-materials.git
+
+# Hae kaikki haarat ja niiden historiat etä-Git-tietovarastosta
+git fetch upstream
+
+# Yhdistä (merge) `upstream`-tietovaraston historia omaan tietovarastoosi
+git merge upstream/master
